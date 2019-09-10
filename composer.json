@@ -1,0 +1,21 @@
+{
+    "name": "udokmeci/yii2-bootstrap-datetime-picker",
+    "description": "Yet another bootstrap datetime picker plugin for UNIX Timestamp",
+    "type": "yii2-extension",
+    "keywords": ["yii2","bootstrap","datetime","picker","unix","timestamp"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ugur DOKMECI",
+            "email": "ugurdokmeci@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "udokmeci\\bdtp\\": ""
+        }
+    }
+}
