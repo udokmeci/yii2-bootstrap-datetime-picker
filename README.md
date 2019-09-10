@@ -1,6 +1,6 @@
 yii2 bootstrap datetime picker
 ==============================
-Yet another bootstrap datetime picker plugin for UNIX Timestamp
+Yet another bootstrap datetime picker plugin for UNIX Timestamp (Only for UNIX Timestamp fields!)
 
 Installation
 ------------
@@ -28,4 +28,14 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \udokmeci\bdtp\AutoloadExample::widget(); ?>```
+
+<?= $form->field($model, 'date')->widget(\udokmeci\bdtp\DateTimePicker::className(), [
+	'pluginOptions'=>[
+		'inline'=>true,
+	],
+	'events'=>[
+		'dp.show'=>"function(e){console.log(e);}"
+	]
+]) ?>
+
+```
